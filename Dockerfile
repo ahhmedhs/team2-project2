@@ -1,7 +1,7 @@
-FROM openjdk:11  
+From tomcat:8-jre8 
 
-COPY target/team-2-0.0.1-SNAPSHOT.jar /  
+# Maintainer
+MAINTAINER "valaxytech" 
 
-WORKDIR /  
-
-CMD ["java", "-jar", "team-2-0.0.1-SNAPSHOT.jar"]
+# copy war file on to container 
+COPY ./target/team-2-0.0.1-SNAPSHOT.jar /usr/local/tomcat/webapps
