@@ -5,5 +5,5 @@ MAINTAINER "valaxytech"
 
 # copy war file on to container 
 COPY ./target/team-2-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps
-EXPOSE 8080
+EXPOSE 8091
 CMD [ "catalina.sh", "run" ] 
